@@ -12,9 +12,10 @@ laravel example app
         DB_CONNECTION=mysql
         DB_HOST=127.0.0.1
         DB_PORT=3306
-        DB_DATABASE=laravel-ar-app
-        DB_USERNAME=khalid `user name of mysql`
-        DB_PASSWORD=kh4A23Mansoor `password`
+        DB_DATABASE=laravel-example-app
+        DB_USERNAME=user `user name of mysql`
+        DB_PASSWORD=password `password`
+        
     Generate application key: `php artisan key:generate`
         
     Migrate the database: `php artisan migrate`
