@@ -21,10 +21,10 @@ class loginController extends Controller
         $data = $this->validateUser();
         $email = $data['email'];
         $password = $data['password'];
-        $encryptPassword = md5($password);
+//        $encryptPassword = md5($password);
         
         $query = "SELECT `id`, `name`, `email`, `password`
-        FROM `users` WHERE `email` = '$email' AND `password` = '$encryptPassword';";
+        FROM `users` WHERE `email` = '$email' AND `password` = '$password';";
         $count = 0;
         $message = '';
         

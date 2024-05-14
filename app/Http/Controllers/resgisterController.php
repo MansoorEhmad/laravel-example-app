@@ -20,8 +20,8 @@ class resgisterController extends Controller
         
         try{
             DB::beginTransaction();
-            $encryptPassword = md5($data['password']);
-            $data['password'] = $encryptPassword;
+//            $encryptPassword = md5($data['password']);
+//            $data['password'] = $encryptPassword;
             User::create($data);
             
             DB::commit();
